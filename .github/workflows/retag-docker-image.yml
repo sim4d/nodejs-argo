@@ -1,0 +1,25 @@
+name: Retag and Push Docker Image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  retag-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull, Retag and Push Docker image
+        run: |
+          docker pull ygkkk/argosbx
+          docker tag ygkkk/argosbx ghcr.io/${{ github.repository_owner }}/myargosbx:latest
+          docker push ghcr.io/${{ github.repository_owner }}/myargosbx:latest
