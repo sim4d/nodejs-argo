@@ -8,7 +8,7 @@ https://nav.eooce.com/
 
 | 变量名 | 是否必须 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| **UUID** | 否 | `89c13786-25aa-4520-b2e7-12cd60fb5202` | 用户 UUID |
-| **ARGO_DOMAIN** | 否 | - | Argo 固定隧道域名 |
-| **ARGO_AUTH** | 否 | - | Argo 固定隧道密钥 |
+| **UUID** | 是 | `89c13786-25aa-4520-b2e7-12cd60fb5202` | 用户 UUID |
+| **ARGO_DOMAIN** | 是 | - | Argo 固定隧道域名 |
+| **ARGO_AUTH** | 是 | - | Argo 固定隧道密钥 |
 | **ARGO_PORT** | 否 | `8001` | Argo 隧道端口 |
