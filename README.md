@@ -12,3 +12,7 @@ https://nav.eooce.com/
 | **ARGO_DOMAIN** | 是 | - | Argo 固定隧道域名 |
 | **ARGO_AUTH** | 是 | - | Argo 固定隧道密钥 |
 | **ARGO_PORT** | 否 | `8001` | Argo 隧道端口 |
+
+## More Environment Variables
+
+check origin project [eooce/nodejs-argo](https://github.com/eooce/nodejs-argo)
